@@ -43,14 +43,14 @@ tr = Config.COMMAND_HAND_LER
 
 def get_thumb(name=None, url=None):
     if url is None:
-        url = f"https://github.com/TgCatUB/CatUserbot-Resources/blob/master/Resources/Inline/{name}?raw=true"
+        url = f"https://github.com/alphauser-don/CatUserbot-Resources/tree/master/Resources/Inline/{name}?raw=true"
     return types.InputWebDocument(
         url=url, size=0, mime_type="image/jpeg", attributes=[]
     )
 
 
 def main_menu():
-    text = f"𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
+    text = f"𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
         \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
     buttons = [
         (Button.inline("ℹ️ Info", data="check"),),
@@ -154,7 +154,7 @@ async def filemanager_article(event):
         title="File Manager",
         description=f"Inline file manager\nSyntax: ls (path optional)\nPath:  {path}",
         thumbnail=get_thumb("filemanager.jpg"),
-        media="https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/filemanager.jpg",
+        media="https://github.com/alphauser-don/CatUserbot-Resources/blob/master/Resources/Inline/filemanager.jpg",
         text=query,
         buttons=buttons,
     )
@@ -163,16 +163,16 @@ async def filemanager_article(event):
 async def deploy_article(event):
     buttons = [
         (
-            Button.url("Source code", "https://github.com/TgCatUB/catuserbot"),
-            Button.url("Deploy", "https://github.com/TgCatUB/nekopack"),
+            Button.url("Source code", "https://www.youtube.com/shorts/Haj0wvhS4Vo"),
+            Button.url("Deploy", "https://www.youtube.com/shorts/Haj0wvhS4Vo"),
         )
     ]
     return await build_article(
         event,
         title="𝘾𝙖𝙩𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
         description="Deploy yourself.",
-        media="https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/catlogo.png",
-        text="𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁.",
+        media="https://github.com/alphauser-don/CatUserbot-Resources/blob/master/Resources/Inline/catlogo.png",
+        text="𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁.",
         buttons=buttons,
     )
 
@@ -228,7 +228,7 @@ async def vcplayer_article(event):
             text=text,
             description="Manange Vc Stream.",
             buttons=buttons,
-            thumbnail="https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/vcplayer.jpg",
+            thumbnail="https://github.com/alphauser-don/CatUserbot-Resources/raw/master/Resources/Inline/vcplayer.jpg",
         )
     except Exception:
         return None
@@ -242,7 +242,7 @@ async def article_builder(event, method):
         buttons = [
             (
                 Button.inline("Stats", data="stats"),
-                Button.url("Repo", "https://github.com/TgCatUB/catuserbot"),
+                Button.url("Repo", "https://www.youtube.com/shorts/Haj0wvhS4Vo"),
             )
         ]
         try:
@@ -253,7 +253,7 @@ async def article_builder(event, method):
             return None
         title = "Cat Alive"
         thumb = get_thumb("alive.png")
-        description = "Alive menu for CatUserbot."
+        description = "Alive menu for Userbot."
         ALIVE_PIC = gvarstatus("ALIVE_PIC")
         IALIVE_PIC = gvarstatus("IALIVE_PIC")
         if IALIVE_PIC:
