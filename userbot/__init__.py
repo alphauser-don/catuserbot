@@ -23,12 +23,12 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.3.0"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "CatUserBot <https://github.com/TgCatUB/catuserbot>"
+__author__ = "UserBot <https://www.youtube.com/shorts/Haj0wvhS4Vo>"
 __copyright__ = f"Copyright (C) 2020 - 2023  {__author__}"
 
 catub.version = __version__
 catub.tgbot.version = __version__
-LOGS = logging.getLogger("CatUserbot")
+LOGS = logging.getLogger("Userbot")
 bot = catub
 
 StartTime = time.time()
